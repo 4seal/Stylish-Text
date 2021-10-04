@@ -17,7 +17,7 @@ async def start(c, m):
 
 `I can help you to get stylish fonts. Just send me some text and see magic.`
 
-**👲 Maintained By:** {owner.mention(style='md')}
+**👲 CODED BY:** {owner.mention(style='md')}
 """
 
     # Buttons
@@ -65,6 +65,7 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
         ],[
         InlineKeyboardButton('Next ➡️', callback_data="nxt")
+        InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}")
     ]]
     if not cb:
         await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
