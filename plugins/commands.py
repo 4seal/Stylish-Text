@@ -23,7 +23,7 @@ async def start(c, m):
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}")
+            InlineKeyboardButton('My Father 👨‍✈️', url="https://t.me/{owner_username}")
         ]
     ]
     await m.reply_text(
@@ -65,7 +65,7 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
         ],[
         InlineKeyboardButton('Next ➡️', callback_data="nxt")
-        InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}")
+        InlineKeyboardButton('My Father 👨‍✈️', url="https://t.me/{owner_username}")
     ]]
     if not cb:
         await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
